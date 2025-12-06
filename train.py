@@ -9,8 +9,9 @@ from torch.nn.modules.container import Sequential
 import ultralytics
 
 def main():
-    target_model = YOLOv8("yolov8n.pt")
-    target_model.train("./labeled-images/data.yaml", epochs=200, device='0')
+    model = YOLOv8("yolov8n.pt")
+    model .train("./labeled-images/data.yaml", epochs=200, device='0')
+    model.export(format="onnx")
 
 
 if __name__ == "__main__":
