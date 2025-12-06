@@ -1,0 +1,15 @@
+[project]
+name = "bos-ml"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "autodistill>=0.1.29",
+    "autodistill-grounded-sam>=0.1.2",
+    "autodistill-yolov8>=0.1.4",
+    "roboflow>=1.2.11",
+    "scikit-learn>=1.7.2",
+    "setuptools<81",
+    "torch==2.5.0",
+]
